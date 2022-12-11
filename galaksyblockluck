@@ -1,0 +1,5 @@
+for i,v in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do
+    if v:IsA("RemoteEvent") and string.match(tostring(v), "SpawnGalaxy") then
+        game:GetService("ReplicatedStorage")v:FireServer()
+    end
+end
